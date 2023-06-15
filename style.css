@@ -1,0 +1,134 @@
+/* Genel stil ayarları */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Web sitesinin ana bölümü */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sohbet kutusu bölümü */
+.chatbox {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Sohbet kutusunun başlığı */
+.chatbox h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: black;
+}
+
+/* Sohbet kutusunun metin girişi alanı */
+.input-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sohbet kutusunun metin girişi kutusu */
+.input-area input {
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* Sohbet kutusunun gönder butonu */
+.input-area button {
+    width: 10%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* Sohbet geçmişi bölümü */
+.history {
+    width: 40%;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+/* Sohbet geçmişinin başlığı */
+.history h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: black;
+}
+
+/* Sohbet geçmişinin mesajları */
+#messages {
+    height: calc(100% - 80px);
+    overflow-y: scroll;
+}
+
+/* Kullanıcının mesajları */
+.user-message {
+    display: inline-block;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: blue;
+    color:white; 
+}
+
+/* ChatGPT'nin mesajları */
+.chatgpt-message {
+   display:inline-block; 
+   max-width :80%; 
+   margin-left :10px; 
+   margin-right :auto; 
+   margin-top :10px; 
+   margin-bottom :10px; 
+   padding :10px; 
+   border-radius :10px; 
+   background-color :green; 
+   color:white; 
+}
+
+/* Menü bölümü */
+.menu {
+   position :fixed; 
+   top :0; 
+   right :0; 
+   padding :20px; 
+}
+
+/* Menü butonu */
+#menu-button {
+   width :40px; 
+   height :40px; 
+   border :none; 
+   outline :none; 
+   background-color :white; 
+   color:black; 
+}
+
+/* Menü listesi */
+#menu-list {
+   list-style-type :none; 
+}
+
+/* Menü listesinin elemanları */
+#menu-list li {
+   padding :10px; 
+   border-bottom :1px solid black; 
+}
